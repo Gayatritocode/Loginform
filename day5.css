@@ -1,0 +1,101 @@
+/* Styling for the form header */
+h1 {
+    background-color: rgb(255, 205, 210);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
+}
+
+/* Basic styling for form */
+form {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #ff7c01;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(233, 9, 20, 0.1);
+    animation: scaleIn 0.5s ease;
+}
+
+/* Styling for input fields */
+input {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2ab115;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Animation for input focus */
+input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0px 0px 8px rgba(106, 17, 203, 0.5);
+}
+
+/* Buttons styling */
+button {
+    background-color: #6a11cb;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #2575fc;
+    transform: translateY(-2px);
+}
+
+/* Styling for the error and success messages */
+label {
+    font-size: 12px;
+    transition: color 0.3s ease, opacity 0.5s ease;
+
+}
+
+/* Additional button styles for specific actions */
+.check-btn {
+    margin-left: 20px;
+}
+
+.login-btn, .reset-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-btn {
+    background-color: #4caf50;
+}
+
+.reset-btn {
+    background-color: #f44336;
+}
+
+/* Keyframe animations for fadeIn and scaleIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

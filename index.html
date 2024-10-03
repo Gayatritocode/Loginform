@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day5.css">
+</head>
+<body>
+    <h1 align="center">Day 4 validation</h1>
+    <form>
+       username:
+       <input type="text" id="user" required/>
+       <button type="button" onclick="checkEmail()">check Email</button>
+       <label id="emsg"></label><br>
+Password:
+        <input type="password" id="pass" required>
+        <button type="button" onclick="checkpass()">check password</button>
+        <label id="pmsg"></label> <br  />
+mobile No:
+        <input  mobile  type="text" id="mob"  required>
+        <button type="button" onclick="checkmob()">check mobile</button>
+        <label id="mmsg"></label> <br   />  <br>
+
+        <button type="button" onclick="login()">login</button>
+        <label id="loginmsg"></label><br  /><br>
+        
+        <button type="reset">reset</button>
+    </form>
+    <script src="day5.js"></script>
+
+</body>
+</html>
